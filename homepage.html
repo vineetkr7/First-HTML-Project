@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Metadata-->
+  <meta name="description" content="Homepage">
+  <meta name="author" content="Vineet Kumar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  <!--Title of the document-->
+  <title>homepage</title>
+  <!--Audio file, automatically plays on loading the page-->
+  <audio autoplay loop>
+    <source src="sfx.mp3" type="audio/mp3">
+  </audio>
+  <!--Defining style for certain elements-->
+  <style type="text/css">
+    h1 {text-align: center; font-family: Calibri;}
+    div {text-align: center;}
+    body {background-color: khaki; font-family: Calibri;}
+  </style>
+</head>
+<body>
+  <article>
+    <!--Heading of the page-->
+  	<header>
+      <h1><b><u>&#x1F4C3Welcome to Homepage&#x1F4C4</u></b></h1><br>
+  	</header>
+  </article>
+  <!--Main content of the page-->
+  <main>
+    <div>
+      <!--Form for selection of either book or story-->
+      <form>
+        <label for="option">Select one:</label>
+        <select name="dropbox" onchange="window.open(this.options[this.selectedIndex].value,'_self')">
+          <option selected></option>
+          <option value="book.html">Book</option>
+          <option value="story.html">Story</option>
+        </select>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
